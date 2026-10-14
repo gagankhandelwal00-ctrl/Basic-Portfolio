@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+    padding: 40px;
+    margin: auto;
+}
+.sidebar{
+    height: fit-content;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 40px;
+    position: sticky;
+    top: 40px;
+    box-shadow: 0px 0px 10px 5px;
+}
+.profile{
+    text-align: center;
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    padding: 16px;
+}
+.profile:hover{
+    scale: 1.1;
+}
+.main-content{
+    height: fit-content;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 5px;
+
+}
+.profile img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0px 0px 20px 5px orange;
+}
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+.profile h2:hover{
+    color: #FFBF00;
+}
+.profile p{
+    background-color: #1e1e1e;
+    padding: 5px 5px;
+    color: #FFBF00;
+    border: 1px solid #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.contact{
+    margin-top: 30px;
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0px 0px 20px 5px;
+}
+.contact:hover{
+    scale: 1.1;
+}
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size:0.8rem ;
+    font-weight: 500;
+}
+.email{
+    margin-bottom: 15px;
+}
+.social{
+    margin-top: 30px;
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 5px;
+}
+.social a{
+    color: #a0a0a0;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+.social a:hover{
+    color: #FFBF00;
+}
+
+#nevigation{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+#nevigation nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    box-shadow:  0px 0px 20px 5px ;
+    border-radius: 1px;
+}
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+    transition: color 3s ease;
+}
+.active,nav a:hover{
+    color: #FFBF00;
+}
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.heading:hover{
+    color: #FFBF00;
+}
+
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.content{
+    text-align: justify;
+    color: #a0a0a0;
+}
+#skills{
+    margin-bottom: 30px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 40px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #1e1e1e;
+    text-align: center;
+    transition: transform 0.3 ease,boxshadow 0.3s ease;
+}
+.items img{
+    height: 40px;
+    width: 40px;
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+}
+.items h3{
+    font: 1rem;
+    font-weight: 500;
+}
+.items:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 10px 5px orange;
+}
+.edtech{
+    position: relative;
+    margin-top: 20px;
+}
+.education{
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+.degree{
+    font-size: 1.2rem;
+    color: #eaeaea;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.college{
+    font-size: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+.work{
+    color: #a0a0a0;
+}
+.edfirst,.edsecond{
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 25px;
+
+}
+.goal{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 5px solid #FFBF00;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 5;
+}
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 3px;
+    border: 2px solid #3a3a3a;
+    overflow: hidden;
+}
+.projectContainer{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    /* grid-template-rows: 1fr 1fr; */
+}
+.project{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #3a3a3a;
+    overflow: hidden;
+    transition: transform 3s ease,boxshadow 0.3s ease;
+}
+.project:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 5px orange;
+}
+.project img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    padding: 20px;
+}
+.card h3{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+.card p{
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.card span{
+    background-color: rgba(255,191,0,0.1);
+    color: #FFBF00;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1200px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 16px;
+        gap: 20px;
+    }
+    .sidebar{
+        position: static;
+        height: auto;
+        padding: 20px;
+    }
+    .main-content{
+        padding: 20px;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .projectContainer{
+        grid-template-columns: 1fr;
+    }
+    .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 16px;
+    }
+    #nevigation nav{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .main-container{
+        padding: 10px;
+        gap: 14px;
+    }
+    .sidebar{
+        padding: 16px;
+    }
+    .main-content{
+        padding: 16px;
+    }
+    .profile img{
+        height: 90px;
+        width: 90px;
+    }
+    .profile h2{
+        font-size: 1.2rem;
+    }
+    .heading{
+        font-size: 1.2rem;
+    }
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .projectContainer{
+        grid-template-columns: 1fr;
+    }
+    #nevigation nav{
+        gap: 10px;
+    }
+    nav a{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:375px){
+    .main-container{
+        padding: 8px;
+        gap: 10px;
+    }
+    .sidebar{
+        padding: 12px;
+    }
+    .main-content{
+        padding: 12px;
+    }
+    .profile img{
+        height: 75px;
+        width: 75px;
+    }
+    .profile h2{
+        font-size: 1rem;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .items img{
+        height: 30px;
+        width: 30px;
+    }
+    .items h3{
+        font-size: 0.7rem;
+    }
+    .project img{
+        height: 140px;
+    }
+    .card h3{
+        font-size: 0.9rem;
+    }
+    .card p{
+        font-size: 0.8rem;
+    }
+    .degree{
+        font-size: 1rem;
+    }
+    .social a{
+        font-size: 1.2rem;
+    }
+    nav a{
+        font-size: 0.8rem;
+    }
+    .content{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:320px){
+    .main-container{
+        padding: 6px;
+        gap: 8px;
+    }
+    .profile img{
+        height: 65px;
+        width: 65px;
+    }
+    .profile h2{
+        font-size: 0.95rem;
+    }
+    .heading{
+        font-size: 0.95rem;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    .value{
+        font-size: 0.72rem;
+    }
+    .label{
+        font-size: 0.72rem;
+    }
+    .degree{
+        font-size: 0.9rem;
+    }
+    .work, .college{
+        font-size: 0.78rem;
+    }
+}
